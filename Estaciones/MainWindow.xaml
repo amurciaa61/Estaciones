@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estaciones"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Las 4 estaciones" Height="600" Width="900" Icon="Imagenes/lluvia.ico">
+    <Grid Background="LightBlue">
+        <StackPanel>
+        <TextBlock 
+            Text="Las 4 estaciones"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontStyle="Italic">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="Blue"
+                                  Offset="0" />
+                    <GradientStop Color="#9FAC4E"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        </StackPanel>
+        <UniformGrid Rows="2" Columns="2" Margin="0,40" Height="400">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto"
+                          Margin="10">
+                <Image Source="Imagenes/invierno.jpg"
+                       />
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto"
+                          Margin="10">
+                <Image Source="Imagenes/primavera.jpg"
+                         />
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto"
+                          Margin="10">
+                <Image Source="Imagenes/verano.jpg"
+                        />
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="auto"
+                          Margin="0" />
+            <Image Source="Imagenes/otoño.jpg"
+                    />
+        </UniformGrid>
+
     </Grid>
 </Window>
