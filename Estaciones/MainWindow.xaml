@@ -5,51 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estaciones"
         mc:Ignorable="d"
-        Title="Las 4 estaciones" Height="600" Width="900" Icon="Imagenes/lluvia.ico">
-    <Grid Background="LightBlue">
-        <StackPanel>
-        <TextBlock 
-            Text="Las 4 estaciones"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
-            FontSize="30"
-            FontStyle="Italic">
-                <TextBlock.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1"
+        Title="Las 4 estaciones"
+        Height="450"
+        Width="800"
+        Icon="Imagenes/lluvia.ico">
+    <DockPanel Background="#C9E4DF">
+        <TextBlock DockPanel.Dock="Top"
+                   Text="Las 4 estaciones"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   Margin="0,5,0,0"
+                   FontSize="35"
+                   FontFamily="Times new roman"
+                   FontWeight="Heavy"
+                   FontStyle="Italic">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1"
                                      StartPoint="0.5,0">
-                    <GradientStop Color="Blue"
+                    <GradientStop Color="blue"
                                   Offset="0" />
-                    <GradientStop Color="#9FAC4E"
+                    <GradientStop Color="#9B9D34"
                                   Offset="1" />
                 </LinearGradientBrush>
             </TextBlock.Foreground>
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="5"
+                                  Direction="330"
+                                  Color="Black"
+                                  Opacity="0.9"
+                                  BlurRadius="4" />
+            </TextBlock.Effect>
         </TextBlock>
-        </StackPanel>
-        <UniformGrid Rows="2" Columns="2" Margin="0,40" Height="400">
+
+        <UniformGrid Rows="2"
+                     Columns="2"
+                     Margin="0,2">
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           HorizontalScrollBarVisibility="Auto"
                           Margin="10">
-                <Image Source="Imagenes/invierno.jpg"
-                       />
+                <Image Source="Imagenes/invierno.jpg" />
             </ScrollViewer>
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           HorizontalScrollBarVisibility="Auto"
                           Margin="10">
-                <Image Source="Imagenes/primavera.jpg"
-                         />
+                <Image Source="Imagenes/primavera.jpg" />
             </ScrollViewer>
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           HorizontalScrollBarVisibility="Auto"
                           Margin="10">
-                <Image Source="Imagenes/verano.jpg"
-                        />
+                <Image Source="Imagenes/verano.jpg" />
             </ScrollViewer>
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           HorizontalScrollBarVisibility="auto"
-                          Margin="0" />
-            <Image Source="Imagenes/otoño.jpg"
-                    />
+                          Margin="10">
+                <Image Source="Imagenes/otoño.jpg" />
+            </ScrollViewer>
         </UniformGrid>
 
-    </Grid>
+    </DockPanel>
 </Window>
