@@ -34,9 +34,7 @@
                                   Color="Black"
                                   Opacity="0.9"
                                   BlurRadius="4" />
-            </TextBlock.Effect>
-        </TextBlock>
-
+            </TextBlock.Effect></TextBlock>
         <UniformGrid Rows="2"
                      Columns="2"
                      Margin="0,2">
@@ -61,6 +59,5 @@
                 <Image Source="Imagenes/otoño.jpg" />
             </ScrollViewer>
         </UniformGrid>
-
     </DockPanel>
 </Window>
